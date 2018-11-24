@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teen Code Camp</title>
+</head>
+<body background="{{url_for('static',filename='simpsons.jpg')}}" >
+	<h1 align="center" style="margin: 65px"><font size="24" face="Lucida Handwriting">
+		<strong>The Simpsons World.</strong></font> </h1>
+
+	<div align="center">
+		<form action="http://localhost:5000/decryption" method="POST">
+			<label  class="email_css" for="email" style="margin:5px"><font face="Lucida Handwriting"> Email:</font></label>
+			<input type="email" name="email_home_page" size="50px" style="margin: 5px">
+			<br>
+			<label for="password"><font face="Lucida Handwriting" style="margin: 10px"> Password: </font></label>
+			<input type="password" name="password_home_page" size="50px" style="margin: 10px">
+			<br>
+		    <input type="submit" name="Login" value="Log In" style="margin:30px" >
+		</form>
+		<a name="SignUp" href="http://localhost:5000/Registration" style="margin-right: 10px" >Registration</a>
+	</div>
+
+</body>
+</html>

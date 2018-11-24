@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Join The Club.
+	</title>
+	<style type="text/css">
+	label,input{
+		margin: 10px;
+	}
+	h1,label{
+		font-family: 'Lucida Handwriting'
+	}
+</style>
+</head>
+<body background="{{url_for('static',filename='the-simpsons-wallpaper-8.jpg')}}">
+	<h1><strong>Details..</strong></h1>
+	<div>
+		<form action="http://localhost:5000/Home" method = "POST">
+			<label>Name: </label>
+			<input type="text" name="name_entry">
+			<br>
+			<label>Email: </label>
+			<input type="email" name="email_entry">
+			<br>
+			<div>
+				<label>Gender:</label>
+				<!-- <form  method="POST">
+					  <input type="radio" name="gender" value="male"> Male
+					  <input type="radio" name="gender" value="female"> Female
+				</form> -->
+			</div>
+			<br>
+			<label>Pasword: </label>
+			<input type="password" name="password_entry">
+			<br>
+			<label>Confirm Password: </label>
+			<input type="password" name="c_password_entry">
+			<br>
+			<input type="submit" name="submit" value="submit">
+		</form>
+	</div>
+	<p></p>
+
+</body>
+</html>
